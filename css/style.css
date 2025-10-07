@@ -776,7 +776,9 @@ button {
 
 .treatment-section .img-card-grp .top .txt {
   border-bottom: 1px solid #40372f;
-  font-family: "Freesentation";
+  margin-bottom: 5px;
+  /* font-family: "Freesentation"; */
+  font-family: "Cormorant Garamond";
   font-size: 14px;
   font-weight: 500;
 }
@@ -1218,6 +1220,7 @@ button {
   .quick-grp .quick-list {
     flex: 1;
     border-right: 1px solid #dcdddd;
+    border-bottom: 0;
   }
 
   .quick-grp .quick-list:last-child {
@@ -1345,7 +1348,7 @@ button {
   }
 
   .treatment-section .bottom-txt-grp .txt {
-    font-size: 17px;
+    font-size: 19px;
   }
 
   .treatment-section .bottom-txt-grp .dot {
@@ -1358,7 +1361,7 @@ button {
 
   .hospital-section .inner {
     max-width: fit-content;
-    padding: 0 28px;
+    padding: 0 35px;
   }
 
   .hospital-section .hospital-grp {
@@ -1373,8 +1376,8 @@ button {
   }
 
   .hospital-section .txt {
-    font-size: 17px;
-    line-height: 29.8px;
+    font-size: 16px;
+    line-height: 28.5px;
     letter-spacing: -0.6px;
   }
 

@@ -48,32 +48,32 @@
     <div class="page en">
         <div class="quick-menu">
             <ul class="quick-grp">
-                <li class="quick-list desktop">
+                <li class="quick-list">
                     <a href="" class="quick-link">
                         <i class="icon icon-insta"></i>
                         <p class="txt">Instagram</p>
                     </a>
                 </li>
-                <li class="quick-list desktop">
+                <li class="quick-list">
                     <a href="" class="quick-link">
                         <i class="icon icon-yt"></i>
                         <p class="txt">YouTube</p>
                     </a>
                 </li>
-                <li class="quick-list desktop">
+                <li class="quick-list">
                     <a href="" class="quick-link">
                         <i class="icon icon-kakao"></i>
                         <p class="txt">KakaoTalk</p>
                     </a>
                 </li>
-                <li class="quick-list desktop">
+                <li class="quick-list">
                     <a href="" class="quick-link">
                         <i class="icon icon-wechat"></i>
                         <p class="txt">WeChat</p>
                     </a>
                 </li>
             </ul>
-            <button type="button" id="top" class="top"><i class="icon icon-top"></i>TOP</button>
+            <button type="button" id="topBtn" class="top pc"><i class="icon icon-top"></i>TOP</button>
         </div>
         <section class="intro-section">
             <div class="txt-wrap">
@@ -634,6 +634,15 @@
     </footer>
 
     <script>
+        // 상단으로 이동
+        const topBtn = document.getElementById('topBtn');
+
+        topBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
         document.getElementById("langBtn").addEventListener("click", function () {
             document.querySelector(".lang-toggle").classList.toggle("on");
         });

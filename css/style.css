@@ -1251,6 +1251,7 @@ button {
   }
 
   .quick-grp .quick-list .quick-link {
+    height: 72px;
     padding: 13px 10px;
   }
 

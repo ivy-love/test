@@ -1275,7 +1275,7 @@ button {
   }
 
   .intro-section {
-    height: calc(100vh - 74px);
+    height: calc(100vh - 146px);
   }
 
   .intro-section .txt-wrap .txt-grp01 {

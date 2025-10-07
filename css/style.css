@@ -225,6 +225,9 @@ textarea:-ms-input-placeholder {
 .pc {
   display: block !important;
 }
+.pc-ib {
+  display: inline-block !important;
+}
 .mobile {
   display: none !important;
 }
@@ -465,6 +468,9 @@ button {
   line-height: 170%;
   letter-spacing: -0.8px;
 }
+.copy .block {
+  display: block;
+}
 
 .quick-menu {
   z-index: 1;
@@ -562,6 +568,7 @@ button {
 }
 
 .intro-section .txt-wrap {
+  z-index: 1;
   width: 100%;
   position: absolute;
   top: 50%;
@@ -681,8 +688,9 @@ button {
 
 .doctor-section .txt-bottom-grp .txt {
   margin-top: 6px;
-  font-size: 24px;
+  font-size: 21px;
   font-weight: 600;
+  letter-spacing: -0.07px;
 }
 
 .doctor-section .txt-bottom-grp .txt-grp {
@@ -699,7 +707,7 @@ button {
 
 .treatment-section .inner {
   width: 100%;
-  max-width: 1512px;
+  max-width: 1544px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -733,7 +741,7 @@ button {
 .treatment-section .img-card {
   cursor: pointer;
   display: inline-block;
-  width: calc(25% - 20px);
+  width: 25%;
   padding: 10px 10px 23px 10px;
 }
 
@@ -1096,6 +1104,10 @@ button {
 
 @media (max-width: 900px) {
   .pc {
+    display: none !important;
+  }
+
+  .pc-ib {
     display: none !important;
   }
 

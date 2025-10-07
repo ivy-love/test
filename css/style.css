@@ -667,7 +667,7 @@ button {
   font-weight: 600;
   font-style: italic;
   letter-spacing: 1px;
-  line-height: 31px;
+  line-height: 30px;
 }
 
 .doctor-section .txt-bottom-grp {
@@ -779,15 +779,19 @@ button {
   margin-bottom: 5px;
   /* font-family: "Freesentation"; */
   font-family: "Cormorant Garamond";
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
 }
 
 .treatment-section .img-card-grp .top .bg {
   margin: 0 4px 0;
-  font-family: "Noto Sans";
-  font-size: 19px;
-  font-weight: 400;
+  font-family: "Noto Serif";
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.treatment-section .img-card-grp .top .krw {
+  letter-spacing: -0.8px;
 }
 
 .treatment-section .img-card-grp .bottom {
@@ -798,7 +802,7 @@ button {
 .treatment-section .img-card-grp .bottom .txt {
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.5px;
+  letter-spacing: 0;
 }
 
 .treatment-section .bottom-txt-grp {
@@ -1150,9 +1154,8 @@ button {
 
   .lang-menu li a::after {
     bottom: 0;
-    left: 50%;
+    left: 19px;
     transition: all 0.4s;
-    transform: translateX(-50%);
   }
 
   .lang-menu li a:hover::after {
@@ -1349,7 +1352,7 @@ button {
   }
 
   .treatment-section .bottom-txt-grp .txt {
-    font-size: 19px;
+    font-size: 21px;
   }
 
   .treatment-section .bottom-txt-grp .dot {
@@ -1378,7 +1381,7 @@ button {
 
   .hospital-section .txt {
     font-size: 16px;
-    line-height: 28.5px;
+    line-height: 27.5px;
     letter-spacing: -0.6px;
   }
 

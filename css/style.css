@@ -775,6 +775,7 @@ button {
 .treatment-section .img-card-grp .top {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .treatment-section .img-card-grp .top .ttl {
@@ -783,6 +784,8 @@ button {
 }
 
 .treatment-section .img-card-grp .top .txt {
+  flex-shrink: 0;
+  height: 23px;
   border-bottom: 1px solid #40372f;
   margin-bottom: 5px;
   /* font-family: "Freesentation"; */
@@ -1047,10 +1050,6 @@ button {
   .treatment-section .inner > .txt-grp .txt {
     margin-top: 20px;
     font-size: 18px;
-  }
-
-  .treatment-section .img-card-grp .top {
-    align-items: end;
   }
 
   .treatment-section .img-card-grp .top .txt {
@@ -1353,10 +1352,6 @@ button {
   .treatment-section .inner {
     max-width: -webkit-fill-available;
     padding: 0 25px;
-  }
-
-  .treatment-section .img-card-grp .top .txt {
-    flex-shrink: 0;
   }
 
   .treatment-section .img-card {

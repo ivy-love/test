@@ -1019,10 +1019,11 @@ button {
   }
 
   .treatment-section .img-card-grp .txt-grp {
+    height: 88px;
     padding-top: 7px;
     padding-left: 15px;
-    background-image: url("data:image/svg+xml,%3Csvg width='5' height='102' viewBox='0 0 5 102' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='44.3481' fill='%23C5BCB5'/%3E%3Crect y='44.3477' width='5' height='57.6525' fill='%23928E8A'/%3E%3C/svg%3E%0A");
-    background-size: 5px 92px;
+    background-image: url("data:image/svg+xml,%3Csvg width='5' height='110' viewBox='0 0 5 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='47.8261' fill='%23C5BCB5'/%3E%3Crect y='47.8262' width='5' height='62.174' fill='%23928E8A'/%3E%3C/svg%3E%0A");
+    background-size: 5px 89px;
   }
 
   .treatment-section .inner > .txt-grp .ttl {
@@ -1055,6 +1056,7 @@ button {
 
   .treatment-section .img-card-grp .bottom .txt {
     line-height: 17px;
+    letter-spacing: 0.1px;
   }
 
   .treatment-section .bottom-txt-grp {
@@ -1165,7 +1167,7 @@ button {
   }
 
   .ch_footer {
-    padding: 0 20px 30px 20px;
+    padding: 0 20px 85px 20px;
     margin-left: 0;
   }
   .f_logo {
@@ -1334,6 +1336,10 @@ button {
     padding: 0 25px;
   }
 
+  .treatment-section .img-card-grp .top .txt {
+    flex-shrink: 0;
+  }
+
   .treatment-section .img-card {
     width: 100%;
   }
@@ -1438,9 +1444,15 @@ button {
   .contact-section .btn-map .link {
     margin-top: 13px;
     width: 120px;
-    height: 23px;
+    height: 30px;
     font-size: 13px;
     letter-spacing: 1px;
-    line-height: 22px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 360px) {
+  .treatment-section .inner {
+    padding: 0 10px;
   }
 }

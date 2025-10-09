@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>청담차오름의원</title>
+    <title>Cheongdam Chaoreum Clinic</title>
 
     <link type='image/x-icon' rel='shortcut icon' href="/img/ico.ico">
     <meta property="og:title" content="Neck Wrinkle Solution: LumiNeck | Cheongdam Chaoreum Clinic">
@@ -51,33 +51,45 @@
     </header>
     <div class="page en">
         <div class="quick-menu">
-            <ul class="quick-grp">
-                <li class="quick-list">
-                    <a href="" class="quick-link">
-                        <i class="icon icon-insta"></i>
-                        <p class="txt">Instagram</p>
-                    </a>
-                </li>
-                <li class="quick-list">
-                    <a href="" class="quick-link">
-                        <i class="icon icon-yt"></i>
-                        <p class="txt">YouTube</p>
-                    </a>
-                </li>
-                <li class="quick-list">
-                    <a href="" class="quick-link">
-                        <i class="icon icon-kakao"></i>
-                        <p class="txt">KakaoTalk</p>
-                    </a>
-                </li>
-                <li class="quick-list type-01">
-                    <a href="" class="quick-link">
-                        <i class="icon icon-wechat"></i>
-                        <p class="txt">WeChat</p>
-                    </a>
-                </li>
-            </ul>
-            <button type="button" id="topBtn" class="top pc"><i class="icon icon-top"></i>TOP</button>
+            <div class="quick-wrap">
+                <ul class="quick-grp">
+                    <li class="quick-list">
+                        <a href="https://www.instagram.com/_chaoreum__" class="quick-link">
+                            <i class="icon icon-insta"></i>
+                            <p class="txt">Instagram</p>
+                        </a>
+                    </li>
+                    <li class="quick-list">
+                        <a href="https://www.youtube.com/@Dr.Chaoreum" class="quick-link">
+                            <i class="icon icon-yt"></i>
+                            <p class="txt">YouTube</p>
+                        </a>
+                    </li>
+                    <li class="quick-list">
+                        <a href="https://pf.kakao.com/_XNPQxj/chat" class="quick-link">
+                            <i class="icon icon-kakao"></i>
+                            <p class="txt">KakaoTalk</p>
+                        </a>
+                    </li>
+                    <li class="quick-list type-01">
+                        <a href="javascript:;" class="quick-link">
+                            <i class="icon icon-wechat"></i>
+                            <p class="txt">WeChat</p>
+                        </a>
+                    </li>
+                </ul>
+                <button type="button" id="topBtn" class="top pc"><i class="icon icon-top"></i>TOP</button>
+            </div>
+            <div class="wechat_grp pc">
+                <img class="img" src="https://dongancha.mycafe24.com/theme/basic/img/img_wechat.jpg">
+            </div>
+        </div>
+        <div class="mo-wechat-wrap">
+            <div class="bg"></div>
+            <div class="mo-wechat-grp">
+                <button type="button" class="btn-close"><i class="icon icon-close"></i></button>
+                <img class="img" src="https://dongancha.mycafe24.com/theme/basic/img/img_wechat.jpg">
+            </div>
         </div>
         <section class="intro-section">
             <div class="txt-wrap">
@@ -103,10 +115,10 @@
                     controlslist="nodownload" title="인트로 영상" aria-label="인트로 영상" lazy="loading">
                     <source src="https://dongancha.mycafe24.com/theme/basic/img/img_main_en.mp4" type="video/mp4">
                 </video>
-                <!-- <video class="video mobile" loop muted data-autoplay autoplay loop playsinline disablepictureinpicture
+                <video class="video mobile" loop muted data-autoplay autoplay loop playsinline disablepictureinpicture
                     controlslist="nodownload" title="인트로 영상" aria-label="인트로 영상">
-                    <source src="https://dongancha.mycafe24.com/theme/basic/img/img_main_en.mp4" type="video/mp4">
-                </video> -->
+                    <source src="https://dongancha.mycafe24.com/theme/basic/img/mo_img_main_en.mp4" type="video/mp4">
+                </video>
             </div>
         </section>
 
@@ -711,6 +723,36 @@
         AOS.init({
             once: true
         });
+
+        // 위챗 호버시 큐알 나옴
+        // pc
+        function pcAddMouseEvents() {
+            if (window.innerWidth > 901) {
+                document.querySelector(".quick-list.type-01").addEventListener("mouseenter", function () {
+                    document.querySelector(".wechat_grp").classList.add("on");
+                });
+
+                document.querySelector(".quick-list.type-01").addEventListener("mouseleave", function () {
+                    document.querySelector(".wechat_grp").classList.remove("on");
+                });
+            }
+        }
+        pcAddMouseEvents();
+
+        // mobile
+        function moAddMouseEvents() {
+            if (window.innerWidth <= 900) {
+                document.querySelector(".quick-list.type-01").addEventListener("click", function () {
+                    document.querySelector(".mo-wechat-wrap").classList.add("on");
+                });
+
+                document.querySelector(".mo-wechat-grp .btn-close").addEventListener("click", function () {
+                    document.querySelector(".mo-wechat-wrap").classList.remove("on");
+                });
+            }
+        }
+        moAddMouseEvents();
+
 
         // 상단으로 이동
         const topBtn = document.getElementById('topBtn');

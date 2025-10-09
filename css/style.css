@@ -298,7 +298,7 @@ button {
 }
 
 .lang-toggle {
-  z-index: 101;
+  z-index: 1;
   display: inline-block;
   width: 135px;
   position: absolute;
@@ -474,10 +474,17 @@ button {
 
 .quick-menu {
   z-index: 2;
-  overflow: hidden;
   position: fixed;
   top: 250px;
   right: 42px;
+}
+
+.mo-wechat-wrap {
+  display: none;
+}
+
+.quick-wrap {
+  overflow: hidden;
   border-radius: 50px;
   background-color: #fff;
   box-shadow: 3px 0 16px rgba(0, 0, 0, 0.06);
@@ -501,6 +508,49 @@ button {
   display: block;
   padding: 25px 10px 20px;
 }
+
+.quick-menu .wechat_grp {
+  z-index: 1;
+  display: none !important;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  top: 120px;
+  right: 120px;
+  left: auto;
+  border: 9px solid #958376;
+  background-color: #fff;
+}
+
+.quick-menu .wechat_grp .img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.quick-menu .wechat_grp.on {
+  display: block !important;
+}
+
+.quick-menu .wechat_grp::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: -23px;
+  width: 0;
+  height: 0;
+  border-bottom: 7px solid transparent;
+  border-top: 7px solid transparent;
+  border-left: 7px solid #958376;
+  border-right: 7px solid transparent;
+  transform: translateY(-50%);
+}
+
+/* .quick-menu .quick-list.type-01 .quick-link:hover .wechat_grp {
+  display: block;
+} */
+
 .quick-grp .quick-list .icon {
   display: inline-block;
   width: 30px;
@@ -551,6 +601,14 @@ button {
   height: 11px;
   margin: 0 auto 7px;
   background-image: url("data:image/svg+xml,%3Csvg width='12' height='9' viewBox='0 0 12 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.600361 9H11.4007C11.51 8.99966 11.6172 8.96944 11.7107 8.91262C11.8042 8.85579 11.8804 8.7745 11.9312 8.67749C11.982 8.58049 12.0054 8.47144 11.9989 8.36209C11.9925 8.25274 11.9564 8.14723 11.8945 8.05692L6.49433 0.242983C6.27052 -0.0809944 5.73171 -0.0809944 5.5073 0.242983L0.107147 8.05692C0.0446404 8.14704 0.00798496 8.25261 0.00116339 8.36214C-0.00565818 8.47167 0.0176151 8.58098 0.0684546 8.67819C0.119294 8.7754 0.195755 8.8568 0.289531 8.91353C0.383307 8.97027 0.49081 9.00017 0.600361 9Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+/* .mo-wechat-wrap {
+  display: none;
+} */
+
+.page {
+  position: relative;
 }
 
 .intro-section {
@@ -1223,6 +1281,9 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
+  }
+
+  .quick-wrap {
     border-radius: 0;
     border-top: 1px solid #dcdddd;
     box-shadow: none;
@@ -1277,6 +1338,75 @@ button {
 
   .quick-grp .quick-list .txt {
     font-size: 12px;
+  }
+
+  .quick-menu .wechat-wrap {
+    position: relative;
+  }
+
+  .mo-wechat-wrap {
+    content: "";
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .mo-wechat-wrap .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .mo-wechat-grp {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 50vh;
+    left: 50%;
+    width: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  .mo-wechat-wrap.on {
+    display: block;
+  }
+
+  .mo-wechat-grp .btn-close {
+    cursor: pointer;
+    position: absolute;
+    top: -48px;
+    right: -7px;
+  }
+
+  .mo-wechat-grp .btn-close .icon-close {
+    width: 30px;
+    height: 30px;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 8.54207L1.45793 0L0 1.45793L8.54207 10L0 18.5421L1.45793 20L10 11.4579L18.5421 20L20 18.5421L11.4579 10L20 1.45793L18.5421 0L10 8.54207Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+
+  .mo-wechat-grp .img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .quick-menu .wechat_grp::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
   }
 
   .intro-section {

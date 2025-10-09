@@ -475,7 +475,7 @@ button {
 .quick-menu {
   z-index: 2;
   position: fixed;
-  top: 250px;
+  top: 25.5%;
   right: 42px;
 }
 
@@ -1097,7 +1097,7 @@ button {
 
   .treatment-section .img-card-grp .txt-grp {
     height: 88px;
-    padding-top: 7px;
+    padding-top: 8px;
     padding-left: 15px;
     background-image: url("data:image/svg+xml,%3Csvg width='5' height='110' viewBox='0 0 5 110' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='5' height='47.8261' fill='%23C5BCB5'/%3E%3Crect y='47.8262' width='5' height='62.174' fill='%23928E8A'/%3E%3C/svg%3E%0A");
     background-size: 5px 89px;
@@ -1121,6 +1121,7 @@ button {
   .treatment-section .img-card-grp .top .bg {
     margin: 0 2px 0;
     font-size: 16px;
+    letter-spacing: -0.6px;
   }
 
   .treatment-section .img-card-grp .bottom {
@@ -1410,8 +1411,26 @@ button {
   }
 
   .intro-section {
-    height: calc(100vh - 228px);
+    /* height: calc(100vh - 228px); */
+    height: calc(100vh - 146px);
   }
+
+  /* .video-grp {
+    position: relative;
+    padding-top: 177%;
+    width: auto;
+    height: auto;
+  }
+
+  .video-grp .video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  } */
 
   .intro-section .txt-wrap .txt-grp01 {
     margin-bottom: 55px;
@@ -1471,6 +1490,10 @@ button {
     margin: 37px auto 0;
   }
 
+  .doctor-section .txt-top-grp .txt {
+    line-height: 28px;
+  }
+
   .doctor-section .txt-bottom-grp {
     margin-top: 50px;
   }
@@ -1482,7 +1505,7 @@ button {
   .doctor-section .txt-bottom-grp .txt {
     font-size: 21px;
     letter-spacing: 1px;
-    line-height: 31px;
+    line-height: 30px;
   }
 
   .treatment-section {
@@ -1607,7 +1630,7 @@ button {
     margin-top: 13px;
     width: 120px;
     height: 30px;
-    font-size: 13px;
+    font-size: 14px;
     letter-spacing: 1px;
     line-height: 27px;
   }

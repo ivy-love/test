@@ -27,7 +27,7 @@ body {
   max-width: 918px;
 }
 .ch .doctor-section .txt-top-grp .ttl {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .ch .doctor-section .txt-top-grp .txt {
@@ -52,6 +52,9 @@ body {
   font-weight: 400;
 }
 
+.ch .treatment-section .inner {
+  padding: 0 23px;
+}
 .ch .treatment-section .inner > .txt-grp .ttl {
   font-weight: 500;
 }
@@ -90,8 +93,12 @@ body {
   letter-spacing: 0.5px;
 }
 
+.ch .different-section .ttl {
+  font-weight: 400;
+}
+
 .ch .contact-section .ttl {
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .ch .contact-section .tt {
@@ -135,16 +142,29 @@ body {
     font-size: 18px;
   }
 
+  .ch .treatment-section {
+    padding-top: 135px;
+  }
+
   .ch .treatment-section .inner > .txt-grp .ttl {
     font-weight: 400;
+  }
+
+  .ch .treatment-section .inner > .txt-grp .txt {
+    margin-top: 16px;
   }
 
   .ch .treatment-section .img-card-grp .top .ttl {
     font-weight: 400;
   }
 
+  .ch .treatment-section .img-card-grp .top .txt {
+    font-weight: 400;
+  }
+
   .ch .treatment-section .img-card-grp .bottom .txt {
     font-weight: 400;
+    line-height: 20px;
   }
 
   .ch .treatment-section .img-card {
@@ -153,6 +173,7 @@ body {
 
   .ch .treatment-section .img-card-grp .top .bg {
     font-size: 14px;
+    font-weight: 500;
     letter-spacing: -0.4px;
   }
 
@@ -166,7 +187,7 @@ body {
   }
 
   .ch .different-section .ttl {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 400;
   }
 
@@ -180,12 +201,17 @@ body {
   }
 
   .ch .contact-section .ttl {
-    font-size: 40px;
+    font-size: 38px;
     font-weight: 400;
+  }
+
+  .ch .contact-section .tt {
+    font-size: 20px;
   }
 
   .ch .contact-section .txt {
     letter-spacing: 0;
+    line-height: 26px;
   }
 
   .ch .contact-section .contact-wrap {

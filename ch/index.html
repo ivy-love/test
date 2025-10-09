@@ -11,28 +11,21 @@
     <meta property="og:title" content="颈纹护理：LumiNeck | Cheongdam Chaoreum Clinic">
     <meta property="og:description" content="自然就是技术。Cheongdam Chaoreum Clinic追求不显痕迹的完美效果。颈纹、手部皱纹、提拉、皮肤护理。">
     <meta name="keywords" content="清潭提拉、颈部提拉、颈纹、面部皱纹、皱纹护理、面部填充、抗衰老、紧致、清潭皮肤科、狎鸥亭皮肤科、狎鸥亭提拉、江南提拉" />
-
     <meta property="og:image" content="/img/link.jpg">
 
-    <!-- <link rel="stylesheet" as="style" crossorigin
-        href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&display=swap&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap&display=swap"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/fonts-archive/Freesentation/Freesentation.css" rel="stylesheet"> -->
     <link <link
         href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Noto+Sans+SC:wght@100..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap"
         rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_ch.css">
+    <link rel="stylesheet" href="https://dongancha.mycafe24.com/theme/basic/css/style02.css">
+    <link rel="stylesheet" href="https://dongancha.mycafe24.com/theme/basic/css/style03.css">
 </head>
 
 <body>
     <header class="ch-header">
         <div class="inner">
             <div class="menu-logo">
-                <a href="https://dongancha.mycafe24.com/theme/basic/en/index.php" class="logo-grp">
+                <a href="https://dongancha.mycafe24.com/theme/basic/ch/index.php" class="logo-grp">
                     <img lazy="loading" src="https://dongancha.mycafe24.com/theme/basic/img/logo.png" class="img">
                 </a>
             </div>
@@ -83,14 +76,14 @@
                 <button type="button" id="topBtn" class="top pc"><i class="icon icon-top"></i>TOP</button>
             </div>
             <div class="wechat_grp pc">
-                <img class="img" src="https://dongancha.mycafe24.com/theme/basic/img/img_wechat.jpg">
+                <img class="img" src="https://dongancha.mycafe24.com/theme/basic/img/img_wechat02.jpg">
             </div>
         </div>
         <div class="mo-wechat-wrap">
             <div class="bg"></div>
             <div class="mo-wechat-grp">
                 <button type="button" class="btn-close"><i class="icon icon-close"></i></button>
-                <img class="img" src="https://dongancha.mycafe24.com/theme/basic/img/img_wechat.jpg">
+                <img class="img" src="https://dongancha.mycafe24.com/theme/basic/img/img_wechat02.jpg">
             </div>
         </div>
         <section class="intro-section">
@@ -726,58 +719,7 @@
         </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script>
-        // aos 초기화
-        AOS.init({
-            once: true
-        });
-
-        // 위챗 호버시 큐알 나옴
-        // pc
-        function pcAddMouseEvents() {
-            if (window.innerWidth > 901) {
-                document.querySelector(".quick-list.type-01").addEventListener("mouseenter", function () {
-                    document.querySelector(".wechat_grp").classList.add("on");
-                });
-
-                document.querySelector(".quick-list.type-01").addEventListener("mouseleave", function () {
-                    document.querySelector(".wechat_grp").classList.remove("on");
-                });
-            }
-        }
-        pcAddMouseEvents();
-
-        // mobile
-        function moAddMouseEvents() {
-            if (window.innerWidth <= 900) {
-                document.querySelector(".quick-list.type-01").addEventListener("click", function () {
-                    document.querySelector(".mo-wechat-wrap").classList.add("on");
-                });
-
-                document.querySelector(".mo-wechat-grp .btn-close").addEventListener("click", function () {
-                    document.querySelector(".mo-wechat-wrap").classList.remove("on");
-                });
-            }
-        }
-        moAddMouseEvents();
-
-
-        // 상단으로 이동
-        const topBtn = document.getElementById('topBtn');
-
-        topBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-
-        // 언어 토글 버튼
-        document.getElementById("langBtn").addEventListener("click", function () {
-            document.querySelector(".lang-toggle").classList.toggle("on");
-        });
-    </script>
+    <script src="https://dongancha.mycafe24.com/theme/basic/js/script.js"></script>
 </body>
 
 </html>

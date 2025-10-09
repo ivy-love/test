@@ -107,11 +107,11 @@ select::-ms-expand {
 }
 /* font */
 /* body {
-  color: #333;
-  font-size: 13px;
-  font-family: "Freesentation", "Pretendard", sans-serif;
-  letter-spacing: -0.6px;
-} */
+    color: #333;
+    font-size: 13px;
+    font-family: "Freesentation", "Pretendard", sans-serif;
+    letter-spacing: -0.6px;
+  } */
 
 body {
   background-color: #f5eee8;
@@ -256,7 +256,7 @@ button {
   display: flex;
   align-items: center;
   position: relative;
-  padding: 15px 0;
+  padding: 20px 0;
   background-color: #a69485;
 }
 
@@ -267,10 +267,16 @@ button {
   padding: 0 16px;
 }
 
+.ch-header .menu-logo {
+  z-index: 1;
+  position: relative;
+}
+
 .ch-header .menu-logo .logo-grp {
   display: block;
   width: 200px;
   height: 32px;
+  margin-top: -7px;
 }
 
 .ch-header .menu-logo .logo-grp .img {
@@ -285,9 +291,9 @@ button {
   top: 50%;
   left: 50%;
   font-family: "Freesentation";
-  font-size: 19px;
+  font-size: 21px;
   font-weight: 400;
-  letter-spacing: 1.3px;
+  letter-spacing: 1px;
   text-align: center;
   color: #f5eee8;
   transform: translate(-50%, -50%);
@@ -318,9 +324,13 @@ button {
   border: none;
   background-color: transparent;
   padding: 8px 12px 11px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 500;
   color: #f5eee8;
+
+  @media (max-width: 1300px) {
+    font-size: 13px;
+  }
 }
 
 .lang-btn .icon-global {
@@ -548,8 +558,8 @@ button {
 }
 
 /* .quick-menu .quick-list.type-01 .quick-link:hover .wechat_grp {
-  display: block;
-} */
+    display: block;
+  } */
 
 .quick-grp .quick-list .icon {
   display: inline-block;
@@ -604,8 +614,8 @@ button {
 }
 
 /* .mo-wechat-wrap {
-  display: none;
-} */
+    display: none;
+  } */
 
 .page {
   position: relative;
@@ -1197,6 +1207,7 @@ button {
   .ch-header .menu-logo .logo-grp {
     width: 144px;
     height: 30px;
+    margin-top: 0;
   }
 
   .ch-header .txt {
@@ -1297,6 +1308,8 @@ button {
   }
 
   .quick-grp .quick-list {
+    position: relative;
+    height: 72px;
     flex: 1;
     border-right: 1px solid #dcdddd;
     border-bottom: 0;
@@ -1312,8 +1325,8 @@ button {
   }
 
   .quick-grp .quick-list .icon-yt {
-    width: 27px;
-    height: 18px;
+    width: 28px;
+    height: 19px;
     margin: 4px 0 6px;
   }
 
@@ -1330,11 +1343,14 @@ button {
   }
 
   .quick-grp .quick-list .quick-link {
-    height: 72px;
-    padding: 13px 10px;
-  }
-  .quick-grp .quick-list.type-01 .quick-link {
-    padding-top: 12px;
+    width: 73px;
+    height: 45px;
+    padding: 0;
+    position: absolute;
+    top: auto;
+    left: 50%;
+    bottom: 13px;
+    transform: translateX(-50%);
   }
 
   .quick-grp .quick-list .txt {
@@ -1416,21 +1432,21 @@ button {
   }
 
   /* .video-grp {
-    position: relative;
-    padding-top: 177%;
-    width: auto;
-    height: auto;
-  }
+      position: relative;
+      padding-top: 177%;
+      width: auto;
+      height: auto;
+    }
 
-  .video-grp .video {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-  } */
+    .video-grp .video {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    } */
 
   .intro-section .txt-wrap .txt-grp01 {
     margin-bottom: 55px;
